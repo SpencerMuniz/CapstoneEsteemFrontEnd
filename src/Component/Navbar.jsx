@@ -25,12 +25,12 @@ function Navbar() {
                 <span className='nav-icon'></span>
             </label>
             <ul className='menu'>
-                <li><NavLink to='/'>About</Navlink></li>
-                <li><NavLink to='/'>Trainers</Navlink></li>
-                <li><NavLink to='/'>Team News</Navlink></li>
-                <li><NavLink to='/'>Schedule</Navlink></li>
-                <li><NavLink to='/'>Contact</Navlink></li>
-                <li><NavLink to='/'>Account</Navlink></li>
+                <li><NavLink to='/about'>About</NavLink></li>
+                <li><NavLink to='/instructors'>Instructors</NavLink></li>
+                <li><NavLink to='/comments'>Team News</NavLink></li>
+                <li><NavLink to='/schedule'>Schedule</NavLink></li>
+                <li><NavLink to='/contact'>Contact</NavLink></li>
+                <li><NavLink to='/orders'>Account</NavLink></li>
             </ul>
         </nav>
     )

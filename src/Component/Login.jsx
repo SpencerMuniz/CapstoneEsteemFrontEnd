@@ -6,7 +6,7 @@ import useForm from './UseForm';
 const Login = ({submitForm}) => {
     const {handleChange, handleSubmit, values, errors} = useForm(
         submitForm,
-        validate
+        validateInformation
     );
     return(
         <div className='login-form-right'>
