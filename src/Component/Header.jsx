@@ -4,10 +4,11 @@ function Header(){
     return(
         <div id='main'>
             <div className='header-heading'>
-                <h1><span>ESTEEM</span>Brazillian Jiu-Jitsu</h1>
+                <h1><span>ESTEEM</span></h1>
+                <h2> Brazillian Jiu-Jitsu</h2>
                 <div className='header-btns'>
-                    <a href='/register' className='header-btn'>REGISTER</a>
-                    <a href='/login' className='header-btn'>LOG IN</a>
+                    <h3><a href='/register' className='header-btn'>REGISTER </a></h3>
+                    <h4><a href='/login' className='header-btn'>LOG IN</a></h4>
                 </div>
             </div>
         </div>
