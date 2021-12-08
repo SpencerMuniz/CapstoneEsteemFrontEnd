@@ -12,6 +12,8 @@ import MikeSchedule from "./Component/MikeSchedule";
 import BrettSchedule from "./Component/BrettSchedule";
 import JackSchedule from "./Component/JackSchedule";
 import RosieSchedule from "./Component/RosieSchedule";
+import Comments from "./Component/Comments";
+
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route path='/instructorschedule1' component={BrettSchedule}/>
           <Route path='/instructorschedule2' component={JackSchedule}/>
           <Route path='/instructorschedule3' component={RosieSchedule}/>
+          <Route path='/comments' component={Comments}/>
+          
         </Switch>
       </Router>
     </div>
