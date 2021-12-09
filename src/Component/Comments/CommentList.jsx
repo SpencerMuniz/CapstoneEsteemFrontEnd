@@ -1,14 +1,18 @@
-import React, { useState, useRef } from "react";
-import user from './images/user.jpg'
-import useDynamicHeightField from "./useDynamicHeightField";
-import './Comments.css'
+import React, { useState, useEffect, useRef } from "react";
+import userPhoto from './../images/userPhoto.jpg'
+import useDynamicHeightField from "../useDynamicHeightField";
+import './../Comments.css'
 import cn from 'classnames'
+import Comment from './Comment'
+import axiosInstance from "../../api/EsteemAPI";
 
 const INITIAL_HEIGHT = 46;
 
-export default function CommentBox() {
+export default function CommentList() {
+  const [user] = useState(JSON.parse(localStorage.getItem("user")));
   const [isExpanded, setIsExpanded] = useState(false);
   const [commentValue, setCommentValue] = useState("");
+  const [comments, setComments] = useState([])
 
   const outerHeight = useRef(INITIAL_HEIGHT);
   const textRef = useRef(null);
@@ -36,6 +40,14 @@ export default function CommentBox() {
     console.log("send the form data somewhere");
   };
 
+  useEffect(() => {
+    const fetchComments = async () => {
+      const response = await axiosInstance.get("comments/all/")
+      setComments(response.data)
+    }
+    fetchComments()
+  }, [])
+
   return (
     <div className="container">
       <form
@@ -53,12 +65,15 @@ export default function CommentBox() {
         <div className="header">
           <div className="user">
             <img
-              src={user}
+              src={userPhoto}
               alt="User avatar"
             />
-            <span>Big Hector</span>
+            <span>{user.username}</span>
           </div>
         </div>
+        {comments.map((comment, index) => (
+          <Comment key={index} comment={comment} />
+        ))}
         <label htmlFor="comments">What are your thoughts?</label>
         <textarea
           ref={textRef}

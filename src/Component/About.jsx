@@ -1,6 +1,6 @@
 import React from 'react';
-import facebookLogo from './images/facebookLogo.png'
-import instagram from './images/instagram.jpg'
+import fb from './images/fb.jpg'
+import ig from './images/ig.jpg'
 import gym from './images/gym.jpg'
 
 function About(){
@@ -15,10 +15,10 @@ function About(){
                 <p>He participated in folk-style, freestyle, and Greco-Roman wrestling form the age of 12-18. After High School, Michael gravitated towards MMA and no gi Jiu Jitsu. He had two MMA fights in 2007 and 2008, which he won.</p>
                 <p>In 2010, with the support of his wife(Rosie), he was able to open Esteem. Esteem is a close-knit family enviroment, where everyoen is welcome and egos are left at the door.</p>
                 <a href='https://www.facebook.com/michael.stratton.jr/' target='blank'>
-                    <img src={facebookLogo} width="100px" alt='facebook logo'/>
+                    <img src={fb} width="100px" alt='facebook logo'/>
                 </a>
                 <a href='https://www.instagram.com/esteemjiujitsu/?hl=en' target='blank'>
-                    <img src={instagram} width="100px" alt='instagram logo'/>
+                    <img src={ig} width="100px" alt='instagram logo'/>
                 </a>
             </div>
         </div>

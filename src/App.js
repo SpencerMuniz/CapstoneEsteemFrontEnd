@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Navbar from './Component/Navbar'
 import Header from './Component/Header'
 import Login from './Component/Login'
-import Form from './Component/Form'
+import FormSignUp from './Component/Register'
 import About from "./Component/About";
 import Contact from "./Component/Contact";
 import Account from "./Component/Account";
@@ -12,7 +12,9 @@ import MikeSchedule from "./Component/MikeSchedule";
 import BrettSchedule from "./Component/BrettSchedule";
 import JackSchedule from "./Component/JackSchedule";
 import RosieSchedule from "./Component/RosieSchedule";
-import Comments from "./Component/Comments";
+import CommentList from "./Component/Comments/CommentList";
+import Schedule from "./Component/Schedule";
+import Register from "./Component/Register";
 
 
 function App() {
@@ -22,8 +24,8 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path='/' component={Header}/>
-          <Route path='/login' component={Login}/>
-          <Route path='/register' component={Form}/>
+          <Route path="/login" component={Login}/>
+          <Route path="/register" component={Register}/>
           <Route path='/about' component={About}/>
           <Route path='/contact' component={Contact}/>
           <Route path='/orders' component={Account}/>
@@ -32,7 +34,8 @@ function App() {
           <Route path='/instructorschedule1' component={BrettSchedule}/>
           <Route path='/instructorschedule2' component={JackSchedule}/>
           <Route path='/instructorschedule3' component={RosieSchedule}/>
-          <Route path='/comments' component={Comments}/>
+          <Route path='/comments' component={CommentList}/>
+          <Route path='/schedule' component={Schedule}/>
           
         </Switch>
       </Router>
