@@ -1,7 +1,5 @@
 import axios from "axios";
 
-/* Kenny added this file for authenticating users with axios/managing
- tokens 11/26/21 */
 const baseURL = "http://127.0.0.1:8000/api/";
 
 const axiosInstance = axios.create({

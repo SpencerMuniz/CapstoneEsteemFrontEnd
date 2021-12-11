@@ -3,10 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Navbar from './Component/Navbar'
 import Header from './Component/Header'
 import Login from './Component/Login'
-import FormSignUp from './Component/Register'
 import About from "./Component/About";
 import Contact from "./Component/Contact";
-import Account from "./Component/Account";
+import ProductDisplay from "./Component/ProductDisplay";
 import Instructors from "./Component/Instructors";
 import MikeSchedule from "./Component/MikeSchedule";
 import BrettSchedule from "./Component/BrettSchedule";
@@ -15,6 +14,7 @@ import RosieSchedule from "./Component/RosieSchedule";
 import CommentList from "./Component/Comments/CommentList";
 import Schedule from "./Component/Schedule";
 import Register from "./Component/Register";
+
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
           <Route path="/register" component={Register}/>
           <Route path='/about' component={About}/>
           <Route path='/contact' component={Contact}/>
-          <Route path='/orders' component={Account}/>
+          <Route path='/orders' component={ProductDisplay}/>
           <Route path='/instructors' component={Instructors}/>
           <Route path='/instructorschedule' component={MikeSchedule}/>
           <Route path='/instructorschedule1' component={BrettSchedule}/>
