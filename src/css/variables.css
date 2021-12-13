@@ -1,0 +1,27 @@
+:root {
+    /* Colors  */
+    --black: #000000ff;
+    --space-cadet-blue: #0f295cff;
+    --sapphire: #1e4eaeff;
+    --dark-electric-blue: #546a7bff;
+    --manatee: #9ea3b0ff;
+    --primary-bg-color: #0F3792;
+    --primary: #0F3792;
+    --secondary: #F7FB27;
+  
+    /* Fonts */
+    --base-font: "Times New Roman", serif;
+    --heading-font: "Open Sans", sans-serif;
+  
+    /* Font Sizes */
+    --base-font-size: 62.5%; /* For making rem base 10 Ex: 1rem = 10px */
+    --h1: 6rem;
+    --h2: 4rem;
+    --h3: 3.6rem;
+    --h4: 3.2rem;
+    --h5: 2.8rem;
+    --h6: 2.4rem;
+    --lead: 2rem;
+    --small: 1.4rem;
+    --mini: 1.2rem;
+  }

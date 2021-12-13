@@ -28,7 +28,6 @@ const Register = (props) => {
     const handleChange = (e) => {
     updateFormData({
         ...formData,
-        // Trimming any whitespace
         [e.target.name]: e.target.value.trim(),
     });
     console.log(formData)
@@ -82,7 +81,6 @@ const Register = (props) => {
                                         name="userName"
                                         id="floatingInput" 
                                         placeholder="Username" 
-                                        // onChange={(e) => setUserName(e.target.value)}/>
                                         onChange={handleChange}/>
                                         <label for="floatinInput">Username</label>
                                     </div>
@@ -96,7 +94,6 @@ const Register = (props) => {
                                         id="floatingInput" 
                                         placeholder="Password" 
                                         onChange={handleChange}/>
-                                        {/* onChange={(e) => setPassword(e.target.value)}/> */}
                                         <label for="floatinInput">Password</label>
                                     </div>
                                 </div>
@@ -109,7 +106,6 @@ const Register = (props) => {
                                         id="floatingInput" 
                                         placeholder="email@example.com" 
                                         onChange={handleChange}/>
-                                        {/* onChange={(e) => setEmail(e.target.value)}/> */}
                                         <label for="floatinInput">email@example.com</label>
                                     </div>
                                 </div>
@@ -118,11 +114,9 @@ const Register = (props) => {
                                     <div className="form-floating mb-3">
                                         <input type="text" 
                                         className="form-control" 
-                                        // name="first_name"
                                         name="firstName"
                                         id="floatingInput" 
                                         placeholder="Bob" 
-                                        // onChange={(e) => setFName(e.target.value)}/>
                                         onChange={handleChange}/>
                                         <label for="floatinInput">First Name</label>
                                     </div>
@@ -132,27 +126,13 @@ const Register = (props) => {
                                     <div className="form-floating mb-3">
                                         <input type="text" 
                                         className="form-control" 
-                                        // name="last_name"
                                         name="lastName"
                                         id="floatingInput" 
                                         placeholder="Smith" 
-                                        // onChange={(e) => setLName(e.target.value)}/>
                                         onChange={handleChange}/>
                                         <label for="floatinInput">Last Name</label>
                                     </div>
                                 </div>
-                                {/* <div className="form-group">
-                                    <label className="form-label mt-4">Are you Staff?</label>
-                                    <div className="form-floating mb-3">
-                                        <input type="text" 
-                                        className="form-control" 
-                                        name="is_staff"
-                                        id="floatingInput" 
-                                        placeholder="1 is staff 0 is team member" 
-                                        onChange={(e) => setStaff(e.target.value)}/>
-                                        <label for="floatinInput">Are you staff?</label>
-                                    </div>
-                                </div> */}
                                 <div>
                                     <button type="submit" className="btn btn-primary">Submit</button>
                                 </div>

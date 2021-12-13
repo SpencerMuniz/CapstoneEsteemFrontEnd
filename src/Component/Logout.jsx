@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom";
 import axiosInstance from "../api/EsteemAPI";
+import '../css/index.css';
 
 export default function Logout() {
     const history = useHistory();
@@ -18,7 +19,7 @@ export default function Logout() {
       // Redirect to page where logged out users go
       history.push("/login");
     }
-    return <div onClick={handleLogout}>
-      <button>Logout</button>
-    </div>;
+    return <>
+      <button onClick={handleLogout} className="menu-font logout-font">Logout</button>
+    </>;
 }     

@@ -1,0 +1,21 @@
+.trainer-features {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trainer-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.trainer-link {
+    opacity: .9;
+    color: var(--primary)
+}
+
+.trainer-link:hover {
+    opacity: 1;
+    transition: opacity .3s;
+}

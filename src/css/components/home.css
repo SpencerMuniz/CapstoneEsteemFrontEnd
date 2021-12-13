@@ -1,0 +1,30 @@
+.home {
+  font-family: var(--heading-font);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px 0;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.martial-arts-title {
+  font-size: 20px;
+}
+
+.home-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);
+  min-height: calc(100vh - 120px);
+}
+
+.home-auth {
+  color: white;
+}

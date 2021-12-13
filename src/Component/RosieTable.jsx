@@ -8,7 +8,7 @@ function RosieTable(props){
             </div>
             <div className='a-b-text'>
                 <h2>{props.title}</h2>
-                <button className='trainer-btn'><a href='/instructorschedule3'>Click to Reserve a Private Lesson</a></button>
+                <button className='trainer-btn'><a href='/instructorschedule3' className="trainer-link">Click to Reserve a Private Lesson</a></button>
             </div>
         </div>
     )

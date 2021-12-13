@@ -1,2 +1,12 @@
-@import '_utilities.css';
-@import 'components/_comments.css';
+@import 'globals.css';
+@import 'layout.css';
+@import 'utilities.css';
+@import 'spacers.css';
+@import 'text.css';
+@import 'variables.css';
+@import 'components/comments.css';
+@import 'components/navbar.css';
+@import 'components/home.css';
+@import 'components/instructors.css';
+@import 'components/instructor-page.css';
+@import 'components/contact-form.css';

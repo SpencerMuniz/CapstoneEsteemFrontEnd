@@ -1,0 +1,12 @@
+/* Text Alignment */
+
+.text-center {text-align: center}
+
+/* Text Weight */
+
+.bold {font-weight: bold}
+
+/* Text Color */
+
+.text-white {color: white}
+.text-black {color: black}

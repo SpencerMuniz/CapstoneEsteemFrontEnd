@@ -73,7 +73,6 @@ function Login(props){
                                     name="username"
                                     id="floatingInput" 
                                     placeholder="Username" 
-                                    // onChange={(e) => setUserName(e.target.value)}/>
                                     onChange={handleChange}/>
                                     <label for="floatinInput">Username</label>
                                 </div>
@@ -86,7 +85,6 @@ function Login(props){
                                     name="password"
                                     id="floatingInput" 
                                     placeholder="Password" 
-                                    // onChange={(e) => setPassword(e.target.value)}/>
                                     onChange={handleChange}/>
                                     <label for="floatinInput">Password</label>
                                 </div>

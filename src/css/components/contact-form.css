@@ -1,0 +1,21 @@
+.contact-page {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form {
+    padding: 25px;
+}
+
+.contact-input {
+    width: 100%;
+}
+
+.contact-submit {
+    color: white;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--primary);
+}

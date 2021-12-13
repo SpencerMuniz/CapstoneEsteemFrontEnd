@@ -14,6 +14,7 @@ import RosieSchedule from "./Component/RosieSchedule";
 import CommentList from "./Component/Comments/CommentList";
 import Schedule from "./Component/Schedule";
 import Register from "./Component/Register";
+import YoutubeVideo from './Component/Videos/YoutubeVideo'
 
 
 
@@ -36,6 +37,7 @@ function App() {
           <Route path='/instructorschedule3' component={RosieSchedule}/>
           <Route path='/comments' component={CommentList}/>
           <Route path='/schedule' component={Schedule}/>
+          <Route path='/video' component={YoutubeVideo}/>
           
         </Switch>
       </Router>
