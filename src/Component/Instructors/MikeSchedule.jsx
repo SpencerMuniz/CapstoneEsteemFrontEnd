@@ -1,6 +1,6 @@
 import React from "react";
-import mike from "./images/mike.jpg";
-import notify from "./utilities/Notify";
+import mike from "../images/mike.jpg";
+import notify from "../utilities/Notify";
 
 function MikeSchedule() {
   return (

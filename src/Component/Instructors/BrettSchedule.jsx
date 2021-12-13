@@ -1,6 +1,6 @@
 import React from "react";
-import brett from "./images/brett.jpg";
-import notify from "./utilities/Notify";
+import brett from "../images/brett.jpg";
+import notify from "../utilities/Notify";
 
 function BrettSchedule() {
   return (

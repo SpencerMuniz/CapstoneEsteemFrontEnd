@@ -1,6 +1,6 @@
 import React from "react";
-import jack from "./images/jack.jpg";
-import notify from "./utilities/Notify";
+import jack from "../images/jack.jpg";
+import notify from "../utilities/Notify";
 
 function JackSchedule() {
   return (

@@ -6,11 +6,11 @@ import Login from './Component/Login'
 import About from "./Component/About";
 import Contact from "./Component/Contact";
 import ProductDisplay from "./Component/ProductDisplay";
-import Instructors from "./Component/Instructors";
-import MikeSchedule from "./Component/MikeSchedule";
-import BrettSchedule from "./Component/BrettSchedule";
-import JackSchedule from "./Component/JackSchedule";
-import RosieSchedule from "./Component/RosieSchedule";
+import Instructors from "./Component/Instructors/Instructors";
+import MikeSchedule from "./Component/Instructors/MikeSchedule";
+import BrettSchedule from "./Component/Instructors/BrettSchedule";
+import JackSchedule from "./Component/Instructors/JackSchedule";
+import RosieSchedule from "./Component/Instructors/RosieSchedule";
 import CommentList from "./Component/Comments/CommentList";
 import Schedule from "./Component/Schedule";
 import Register from "./Component/Register";

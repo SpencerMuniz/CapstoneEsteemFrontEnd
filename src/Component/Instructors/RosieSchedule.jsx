@@ -1,6 +1,6 @@
 import React from "react";
-import rosie from "./images/rosie.jpg";
-import notify from "./utilities/Notify";
+import rosie from "../images/rosie.jpg";
+import notify from "../utilities/Notify";
 
 function RosieSchedule() {
   return (
