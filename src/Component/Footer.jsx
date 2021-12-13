@@ -5,7 +5,7 @@ const Footer = (props) => {
 
   
   return (
-    <div className="">
+    <div className=" mt-2">
       <nav>
         <ul className="menu">
           

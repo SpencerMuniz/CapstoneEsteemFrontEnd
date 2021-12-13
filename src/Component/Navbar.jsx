@@ -67,7 +67,7 @@ const Navbar = (props) => {
   }
 
   return (
-    <div className="">
+    <div className="mb-2">
       <nav className={nav ? "nav active" : "nav"}>
         <ul className="menu">
           <li className="menu-link">
