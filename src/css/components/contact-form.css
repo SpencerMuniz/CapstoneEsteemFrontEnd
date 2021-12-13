@@ -7,10 +7,16 @@
 
 .contact-form {
     padding: 25px;
+    width: 100%;
+    border: 1px solid #676674;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
 }
 
 .contact-input {
     width: 100%;
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
 .contact-submit {

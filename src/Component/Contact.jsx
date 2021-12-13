@@ -26,19 +26,19 @@ function Contact() {
           <input
             type="text"
             placeholder="Full Name"
-            className="contact-input block"
+            className="contact-input block mb-2"
             required
           />
           <input
             type="email"
             placeholder="Enter Email"
-            className="contact-input block"
+            className="contact-input block mb-2"
             required
           />
           <textarea
             placeholder="Write your question here"
             name="question"
-            className="contact-input"
+            className="contact-input block mb-2"
           ></textarea>
           <input type="submit" value="Send" className="contact-submit block" />
         </form>

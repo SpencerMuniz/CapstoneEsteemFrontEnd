@@ -13,7 +13,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 import Paper from "@material-ui/core/Paper";
 import Avatar from "@material-ui/core/Avatar";
 
-// import { withStyles } from "@material-ui/core/styles";
+
 
 const INITIAL_HEIGHT = 46;
 
@@ -34,30 +34,7 @@ export default function CommentList() {
   const outerHeight = useRef(INITIAL_HEIGHT);
   const textRef = useRef(null);
   const containerRef = useRef(null);
-  // useDynamicHeightField(textRef, commentValue);
-
-  // const useStyles = (theme) => ({
-  //   paper: {
-  //     marginTop: theme.spacing(8),
-  //     display: "flex",
-  //     flexDirection: "column",
-  //     alignItems: "center",
-  //   },
-  //   avatar: {
-  //     margin: theme.spacing(1),
-  //     backgroundColor: theme.palette.secondary.main,
-  //   },
-  //   form: {
-  //     width: "100%", // Fix IE 11 issue.
-  //     marginTop: theme.spacing(1),
-  //   },
-  //   submit: {
-  //     margin: theme.spacing(3, 0, 2),
-  //   },
-  //   root: {
-  //     boxShadow: "none",
-  //   },
-  // });
+  
 
 
   const onButtonClicked = (e) => {
@@ -128,22 +105,15 @@ export default function CommentList() {
     };
   }, [])
 
-  // const { classes } = useStyles;
+
   return (
     <Container component="main" maxWidth="xs">
       {isLoggedIn ? (
         <div 
-        // style={{ marginTop: 50 }}
         >
 
           Room Name: {room}
           <Paper
-            // style={{
-            //   height: 500,
-            //   maxHeight: 500,
-            //   overflow: "auto",
-            //   boxShadow: "none",
-            // }}
           >
             {messages.map((message) => (
               <>
@@ -185,7 +155,7 @@ export default function CommentList() {
           <CssBaseline />
           <div className="paper">
              <Typography component="h1" variant="h5">
-               ChattyRooms
+               Team Chat
              </Typography>
             <form
               className="form"
@@ -231,14 +201,10 @@ export default function CommentList() {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
-                    Forgot password?
-                  </Link>
+                  
                 </Grid>
                 <Grid item>
-                  <Link href="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
-                  </Link>
+                  
                 </Grid>
               </Grid>
             </form>

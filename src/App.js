@@ -12,6 +12,7 @@ import BrettSchedule from "./Component/Instructors/BrettSchedule";
 import JackSchedule from "./Component/Instructors/JackSchedule";
 import RosieSchedule from "./Component/Instructors/RosieSchedule";
 import CommentList from "./Component/Comments/CommentList";
+import Footer from "./Component/Footer"
 import Schedule from "./Component/Schedule";
 import Register from "./Component/Register";
 import YoutubeVideo from './Component/Videos/YoutubeVideo'
@@ -40,6 +41,7 @@ function App() {
           <Route path='/video' component={YoutubeVideo}/>
           
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

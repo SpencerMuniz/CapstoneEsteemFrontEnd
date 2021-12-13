@@ -10,7 +10,7 @@ const Iframe = ({ source }) => {
     return (
         <div className="">
             <div className="">
-                <iframe src={src}></iframe>
+                <iframe src={src} width="100%"></iframe>
             </div>
         </div>
     );

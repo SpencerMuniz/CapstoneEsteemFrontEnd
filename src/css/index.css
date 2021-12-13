@@ -4,9 +4,12 @@
 @import 'spacers.css';
 @import 'text.css';
 @import 'variables.css';
-@import 'components/comments.css';
+@import 'components/Comments.css';
 @import 'components/navbar.css';
 @import 'components/home.css';
 @import 'components/instructors.css';
 @import 'components/instructor-page.css';
 @import 'components/contact-form.css';
+@import 'components/schedule.css';
+@import 'components/about.css';
+@import 'components/video.css';
