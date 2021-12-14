@@ -34,7 +34,6 @@ export default function CommentList() {
   const outerHeight = useRef(INITIAL_HEIGHT);
   const textRef = useRef(null);
   const containerRef = useRef(null);
-  
 
 
   const onButtonClicked = (e) => {
@@ -105,15 +104,17 @@ export default function CommentList() {
     };
   }, [])
 
-
+  
   return (
     <Container component="main" maxWidth="xs">
       {isLoggedIn ? (
         <div 
+        
         >
 
           Room Name: {room}
           <Paper
+            
           >
             {messages.map((message) => (
               <>
@@ -146,7 +147,7 @@ export default function CommentList() {
               color="primary"
               className="submit"
             >
-              Start Chatting
+              Team Chat
             </Button>
           </form>
         </div>
@@ -201,10 +202,14 @@ export default function CommentList() {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  
+                  <Link href="#" variant="body2">
+                    
+                  </Link>
                 </Grid>
                 <Grid item>
-                  
+                  <Link href="#" variant="body2">
+                    
+                  </Link>
                 </Grid>
               </Grid>
             </form>
@@ -212,5 +217,7 @@ export default function CommentList() {
         </div>
       )}
     </Container>
+
+
   );
 }
